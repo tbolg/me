@@ -5,15 +5,27 @@ import { AboutMe } from './components/AboutMe';
 import { Header } from './components/Header';
 import { WorkExperience } from './components/WorkExperience';
 import * as data from './data';
+import { useResponsiveValue } from 'braid-design-system';
 
-export const HomePage = () => (
-  <Box paddingY={'xxlarge'}>
-    <ContentBlock>
-      <Stack space="xlarge">
-        <Header />
-        <AboutMe />
-        <WorkExperience experiences={data.workExperience} />
-      </Stack>
-    </ContentBlock>
-  </Box>
-);
+export const HomePage = () => {
+  const responsiveValue = useResponsiveValue();
+  return (
+    <Box paddingY={'xxlarge'}>
+      <ContentBlock
+        width={
+          responsiveValue({
+            mobile: 'xsmall',
+            tablet: 'small',
+            desktop: 'medium',
+          }) ?? 'medium'
+        }
+      >
+        <Stack space="xlarge">
+          <Header />
+          <AboutMe />
+          <WorkExperience experiences={data.workExperience} />
+        </Stack>
+      </ContentBlock>
+    </Box>
+  );
+};
