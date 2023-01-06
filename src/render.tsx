@@ -10,7 +10,7 @@ interface RenderContext {
 }
 
 const skuRender: Render<RenderContext> = {
-  renderApp: ({ SkuProvider, environment, route }) => {
+  renderApp: ({ SkuProvider, route }) => {
     const appHtml = ReactDOM.renderToString(
       <StaticRouter location={route}>
         <SkuProvider>
