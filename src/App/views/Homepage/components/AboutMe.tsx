@@ -4,7 +4,6 @@ import {
   Inline,
   List,
   Stack,
-  Tag,
   Text,
   TextLink,
 } from 'braid-design-system';

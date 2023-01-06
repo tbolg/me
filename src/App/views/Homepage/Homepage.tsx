@@ -1,11 +1,12 @@
 import { Box, ContentBlock, Stack } from 'braid-design-system';
+import { useResponsiveValue } from 'braid-design-system';
 import React from 'react';
 
 import { AboutMe } from './components/AboutMe';
 import { Header } from './components/Header';
+import { Projects } from './components/Project/Projects';
 import { WorkExperience } from './components/WorkExperience';
 import * as data from './data';
-import { useResponsiveValue } from 'braid-design-system';
 
 export const HomePage = () => {
   const responsiveValue = useResponsiveValue();
@@ -24,6 +25,7 @@ export const HomePage = () => {
           <Header />
           <AboutMe />
           <WorkExperience experiences={data.workExperience} />
+          <Projects projects={data.projects} />
         </Stack>
       </ContentBlock>
     </Box>

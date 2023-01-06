@@ -10,6 +10,8 @@ import {
   Inline,
   IconMail,
   useResponsiveValue,
+  ButtonIcon,
+  IconDownload,
 } from 'braid-design-system';
 import React from 'react';
 
@@ -33,8 +35,42 @@ export const Header = () => {
         <Column width="content">
           <Stack space="small" align={isTabletOrAbove ? 'right' : 'center'}>
             <Inline space="small">
-              <IconSocialLinkedIn size="large" />
-              <IconSocialGitHub />
+              <ButtonIcon
+                size="large"
+                bleed
+                icon={<IconSocialGitHub />}
+                id={'github-link'}
+                label={'GitHub'}
+                onClick={() =>
+                  window.open('https://github.com/tbolg', '_blank')
+                }
+              />
+              <ButtonIcon
+                size="large"
+                bleed
+                icon={<IconSocialLinkedIn />}
+                id={'linkedin-link'}
+                label={'LinkedIn'}
+                onClick={() =>
+                  window.open(
+                    'https://www.linkedin.com/in/tomas-bolger/',
+                    '_blank',
+                  )
+                }
+              />
+              <ButtonIcon
+                size="large"
+                bleed
+                icon={<IconDownload />}
+                id={'download-resume-button'}
+                label={'Download Resumé'}
+                onClick={() =>
+                  window.open(
+                    'https://www.linkedin.com/in/tomas-bolger/',
+                    '_blank',
+                  )
+                }
+              />
             </Inline>
             <Text>
               <IconMail /> tbolger.business@gmail.com

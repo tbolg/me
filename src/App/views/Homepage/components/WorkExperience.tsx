@@ -1,6 +1,5 @@
 import {
   Heading,
-  Link,
   List,
   Stack,
   Strong,
@@ -9,7 +8,7 @@ import {
 } from 'braid-design-system';
 import React from 'react';
 
-import { Experience } from '../types';
+import { Experience } from '../types/workExperience';
 
 interface Props {
   experiences: Experience[];
@@ -42,7 +41,7 @@ export const WorkExperience = ({ experiences }: Props) => (
                 <Text align="left">
                   <i>Key Responsibilities and Achievements:</i>
                 </Text>
-                <Stack space="small">
+                <Stack space="medium">
                   {role.secondments.map((secondment) => (
                     <Stack key={secondment.teamName} space="small">
                       <Text align="left" weight="strong">

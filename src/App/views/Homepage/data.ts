@@ -1,4 +1,5 @@
-import { Experience } from './types';
+import { Project } from './types/projects';
+import { Experience } from './types/workExperience';
 
 export const workExperience: Experience[] = [
   {
@@ -13,7 +14,7 @@ export const workExperience: Experience[] = [
             teamName: 'SEEK API Team',
             teamUrl: 'https://developer.seek.com',
             achievements: [
-              'Adding new features to event driven web- hook systems responsible for managing over 50% of ads on SEEK',
+              'Adding new features to event driven web-hook systems responsible for managing over 50% of ads on SEEK',
               'Developing tools to help software engineers seamlessly integrate with SEEK',
               'Building embeddable widget products to enhance SEEK customer experience/value in partner systems',
               'Creating open source React components that demonstrate building UI components that utilise the SEEK GraphQL API',
@@ -56,5 +57,22 @@ export const workExperience: Experience[] = [
         ],
       },
     ],
+  },
+];
+
+export const projects: Project[] = [
+  {
+    name: 'SpotifySquared',
+    githubUrl: 'https://github.com/tbolg/SpotifySquared',
+    description:
+      'A minimalist Spotify widget. It was inspired by a similar app called Silicio, but provides more controls to the user. This is a project I have more plans for going forward, so keep an eye on it!',
+    downloadUrl:
+      'https://github.com/tbolg/SpotifySquared/releases/download/development/SpotifySquared.V1.0.zip',
+  },
+  {
+    name: 'Scalpel',
+    githubUrl: 'https://github.com/SMAT-Lab/Scalpel',
+    description: `Scalpel is a Python Static Analysis Framework that provides essential program analysis functions that assist in building robust Python applications. 
+        For my honours year research project, I significantly contributed to this frameworks type inference module by implementing a nascent heuristic based type inference system.`,
   },
 ];
