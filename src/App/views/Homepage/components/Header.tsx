@@ -58,9 +58,19 @@ export const Header = () => {
                 }
               />
             </Inline>
-            <Text>
-              <IconMail /> tbolger.business@gmail.com
-            </Text>
+            <Inline space="xsmall" alignY="center">
+              <ButtonIcon
+                icon={<IconMail />}
+                id="mail-button"
+                label="Get in contact"
+                onClick={() => {
+                  window.open(
+                    'mailto:tbolger.business@gmail.com?subject=Hi%20Tomas!%20We%20want%20to%20hire%20you!',
+                  );
+                }}
+              />
+              <Text>tbolger.business@gmail.com</Text>
+            </Inline>
           </Stack>
         </Column>
       </Columns>
