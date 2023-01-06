@@ -1,10 +1,3 @@
-export interface Education {
-  school: string;
-  degree: string;
-  startDate: string;
-  endDate: string;
-}
-
 export interface Secondment {
   teamName: string;
   teamUrl?: string;

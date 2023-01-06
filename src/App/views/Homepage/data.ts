@@ -1,3 +1,4 @@
+import { Education } from './types/education';
 import { Project } from './types/projects';
 import { Experience } from './types/workExperience';
 
@@ -76,3 +77,11 @@ export const projects: Project[] = [
         For my honours year research project, I significantly contributed to this frameworks type inference module by implementing a nascent heuristic based type inference system.`,
   },
 ];
+
+export const education: Education = {
+  university: 'Monash University',
+  degree: 'Bachelor of Software Engineering (Honours)',
+  notes: 'Graduated with Distinction',
+  yearStarted: '2018',
+  yearFinished: '2021',
+};

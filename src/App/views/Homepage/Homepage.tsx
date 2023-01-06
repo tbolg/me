@@ -3,6 +3,7 @@ import { useResponsiveValue } from 'braid-design-system';
 import React from 'react';
 
 import { AboutMe } from './components/AboutMe';
+import { EducationHistory } from './components/EducationHistory';
 import { Header } from './components/Header';
 import { Projects } from './components/Project/Projects';
 import { WorkExperience } from './components/WorkExperience';
@@ -25,6 +26,7 @@ export const HomePage = () => {
           <Header />
           <AboutMe />
           <WorkExperience experiences={data.workExperience} />
+          <EducationHistory education={data.education} />
           <Projects projects={data.projects} />
         </Stack>
       </ContentBlock>
