@@ -13,12 +13,16 @@ export const EducationHistory = ({ education }: Props) => (
       Education
     </Heading>
     <Stack space="medium" align="center">
-      <Heading level="3">{education.university}</Heading>
-      <Heading level="4">{education.degree}</Heading>
-      <Text weight="strong">
+      <Heading align="center" level="3">
+        {education.university}
+      </Heading>
+      <Heading align="center" level="4">
+        {education.degree}
+      </Heading>
+      <Text align="center" weight="strong">
         Completed {education.yearStarted} - {education.yearFinished}
       </Text>
-      <Text>{education.notes}</Text>
+      <Text align="center">{education.notes}</Text>
     </Stack>
   </Stack>
 );

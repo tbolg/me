@@ -44,7 +44,7 @@ export const Projects = ({ projects }: Props) => (
                   icon={<IconDownload />}
                   id={`${project.name}-github-url`}
                   label={'Download application'}
-                  onClick={() => window.open(project.githubUrl, '_blank')}
+                  onClick={() => window.open(project.downloadUrl, '_blank')}
                 />
               ) : null}
             </Inline>
