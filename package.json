@@ -10,8 +10,7 @@
     "serve": "sku serve",
     "lint": "sku lint",
     "format": "sku format",
-    "predeploy": "sku build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "serverless deploy"
   },
   "husky": {
     "hooks": {
@@ -29,6 +28,7 @@
     "@types/react": "17.0.40",
     "@types/react-dom": "17.0.13",
     "gh-pages": "4.0.0",
-    "husky": "7.0.4"
+    "husky": "7.0.4",
+    "serverless-s3-sync": "^3.1.0"
   }
 }
