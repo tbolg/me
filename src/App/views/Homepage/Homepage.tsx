@@ -13,7 +13,7 @@ import * as data from './data';
 export const HomePage = () => {
   const responsiveValue = useResponsiveValue();
   return (
-    <Box paddingY={'xxlarge'}>
+    <Box paddingY={'xxlarge'} paddingX={'medium'}>
       <ContentBlock
         width={
           responsiveValue({

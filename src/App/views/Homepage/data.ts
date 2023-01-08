@@ -5,7 +5,7 @@ import { Experience } from './types/workExperience';
 export const workExperience: Experience[] = [
   {
     companyName: 'Seek Ltd.',
-    companyUrl: 'www.seek.com.au',
+    companyUrl: 'https://www.seek.com.au',
     roles: [
       {
         title: 'Associate Software Engineer',
@@ -23,7 +23,7 @@ export const workExperience: Experience[] = [
           },
           {
             teamName: 'SEEK Business',
-            teamUrl: 'https://www.seekbusiness.com.au/',
+            teamUrl: 'https://www.seekbusiness.com.au',
             achievements: [
               'Uplift legacy SEEK Business .NET systems into a React-Typescript microservices stack',
               'Developing new features and products',
@@ -39,7 +39,7 @@ export const workExperience: Experience[] = [
   },
   {
     companyName: 'Transurban Ltd.',
-    companyUrl: 'https://www.transurban.com/',
+    companyUrl: 'https://www.transurban.com',
     roles: [
       {
         title: 'Data Engineer',
