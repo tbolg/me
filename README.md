@@ -1,1 +1,1 @@
-Personal site for my own projects
+[tomasbolger.xyz](https://tomasbolger.xyz)
