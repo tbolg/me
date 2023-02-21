@@ -41,23 +41,26 @@ export const WorkExperience = ({ experiences }: Props) => {
                     {`${role.startDate} - ${role.endDate ?? 'present'}`}
                   </Strong>
                 </Text>
-                <Stack space="small">
+                <Stack space="medium">
                   <Text align="left">
                     <i>Key Responsibilities and Achievements:</i>
                   </Text>
                   <Stack space="medium">
                     {role.secondments.map((secondment) => (
-                      <Stack key={secondment.teamName} space="small">
+                      <Stack key={secondment.teamName} space="medium">
                         <Text align="left" weight="strong">
                           {secondment.teamName}{' '}
                           {secondment.teamUrl && (
-                            <TextLinkButton
-                              onClick={() =>
-                                window.open(secondment.teamUrl, '_blank')
-                              }
-                            >
-                              {removeHttps(secondment.teamUrl)}
-                            </TextLinkButton>
+                            <>
+                              {'- '}
+                              <TextLinkButton
+                                onClick={() =>
+                                  window.open(secondment.teamUrl, '_blank')
+                                }
+                              >
+                                {removeHttps(secondment.teamUrl)}
+                              </TextLinkButton>
+                            </>
                           )}
                         </Text>
                         <List>
