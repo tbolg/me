@@ -19,9 +19,6 @@ export const EducationHistory = ({ education }: Props) => (
       <Heading align="center" level="4">
         {education.degree}
       </Heading>
-      <Text align="center" weight="strong">
-        Completed {education.yearStarted} - {education.yearFinished}
-      </Text>
       <Text align="center">{education.notes}</Text>
     </Stack>
   </Stack>

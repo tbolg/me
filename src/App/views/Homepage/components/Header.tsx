@@ -11,6 +11,7 @@ import {
   IconMail,
   useResponsiveValue,
   ButtonIcon,
+  IconDownload,
 } from 'braid-design-system';
 import React from 'react';
 
@@ -37,9 +38,20 @@ export const Header = () => {
               <ButtonIcon
                 size="large"
                 bleed
+                icon={<IconDownload />}
+                id="download-resume"
+                label="Download resume"
+                onClick={() =>
+                  window.open('/resume_tomas_bolger.pdf', '_blank')
+                }
+              />
+
+              <ButtonIcon
+                size="large"
+                bleed
                 icon={<IconSocialGitHub />}
-                id={'github-link'}
-                label={'GitHub'}
+                id="github-link"
+                label="GitHub"
                 onClick={() =>
                   window.open('https://github.com/tbolg', '_blank')
                 }
@@ -48,8 +60,8 @@ export const Header = () => {
                 size="large"
                 bleed
                 icon={<IconSocialLinkedIn />}
-                id={'linkedin-link'}
-                label={'LinkedIn'}
+                id="linkedin-link"
+                label="LinkedIn"
                 onClick={() =>
                   window.open(
                     'https://www.linkedin.com/in/tomas-bolger/',

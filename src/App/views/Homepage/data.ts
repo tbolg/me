@@ -8,7 +8,7 @@ export const workExperience: Experience[] = [
     companyUrl: 'https://www.seek.com.au',
     roles: [
       {
-        title: 'Associate Software Engineer',
+        title: 'Software Engineer',
         startDate: '02/2022',
         secondments: [
           {
@@ -87,6 +87,4 @@ export const education: Education = {
   university: 'Monash University',
   degree: 'Bachelor of Software Engineering (Honours)',
   notes: 'Graduated with Distinction',
-  yearStarted: '2018',
-  yearFinished: '2021',
 };
